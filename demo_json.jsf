@@ -4,24 +4,19 @@ try {(function(){
     try { dojo.require.call; } catch (exception) { fw.runScript(fw.currentScriptDir + "/lib/lib.js"); }
 	dojo.require("fwlib.io");
 
-    var json = dojo.toJson({
-        apple : '试试呗',
-        google: 'bb'
-    });
+    var json = dojo.toJson({ en_US: 'English', zh_CN: '中文' });
     var jsonpen = new dojo.jsonpen();
-    var penId = '';
 
-    // 线上创建（不要频繁使用）
+    // 线上创建
     // jsonpen.create(function(res){
-    //     penId = res.id;
-    //     console.log(penId);
+    //     console.log(res);
     // });
 
     // 设置id
-    jsonpen.setId('87690dda19878ab8dafb37be9c275400bc533a96');
+    jsonpen.setId('885900c8e63cc5acb700f41f237770771438ad85ivg3');
 
     // 线上更新
-    jsonpen.update(json);
+    // jsonpen.update(json);
 
     // 线上读取
     jsonpen.read(function(result){
@@ -35,16 +30,16 @@ try {(function(){
     // });
 
     // 保存到文件
-    jsonpen.setFile(fw.appDir+'/test.txt');
-    jsonpen.save(json);
+    // jsonpen.setFile(fw.appDir+'/test.txt');
+    // jsonpen.save(json);
 
     // 从文件读取
-    var jsonText = jsonpen.load();
-    var jsonObject = dojo.fromJson(jsonText);
-    console.log( jsonObject.apple );
+    // var jsonText = jsonpen.load();
+    // var jsonObject = dojo.fromJson(jsonText);
+    // console.log( jsonObject.apple );
 
     // 查看帮助
-    jsonpen.help();
+    // jsonpen.help();
 
 	
 })();} catch (exception) {alert([exception, exception.lineNumber, exception.fileName].join("\n"));}
