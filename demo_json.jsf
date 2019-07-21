@@ -13,10 +13,10 @@ try {(function(){
     // });
 
     // 设置id
-    jsonpen.setId('885900c8e63cc5acb700f41f237770771438ad85ivg3');
+    jsonpen.setId('4ed344ec38bada9578e4c5fe73469cdbb09c9f79ggjc');
 
     // 线上更新
-    // jsonpen.update(json);
+    jsonpen.update(json);
 
     // 线上读取
     jsonpen.read(function(result){
