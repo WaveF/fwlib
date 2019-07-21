@@ -13,21 +13,23 @@ try {(function(){
     // });
 
     // 设置id
-    jsonpen.setId('4ed344ec38bada9578e4c5fe73469cdbb09c9f79ggjc');
+    // jsonpen.setId('4ed344ec38bada9578e4c5fe73469cdbb09c9f79ggjc');
 
     // 线上更新
-    jsonpen.update(json);
+    // jsonpen.update(json, function(result){
+    //     console.log('UPDATE:', result);
+    // });
 
     // 线上读取
-    jsonpen.read(function(result){
-        var data = dojo.fromJson(result.data);
-        console.log('READ:', data);
-    });
+    // jsonpen.read(function(result){
+    //     var data = dojo.fromJson(result.data);
+    //     console.log('READ:', result);
+    // });
 
     // 线上删除
-    // jsonpen.del(function(result){
-    //     console.log('DEL', result);
-    // });
+    jsonpen.del('a2c3c97762bbd624641976714249150e43fcd3c6', function(res){
+        console.log('DEL', res);
+    });
 
     // 保存到文件
     // jsonpen.setFile(fw.appDir+'/test.txt');
