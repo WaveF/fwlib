@@ -13,12 +13,12 @@ try {(function(){
     // });
 
     // 设置id
-    jsonpen.setId('8384d2d4cc01a6c12dae1d850b2552927d355024o36k');
+    jsonpen.setId('8c215c4fd61add3c2d7a9e0e3a7ab568b159bf88e7vs');
 
     // 线上更新
-    jsonpen.update(json, function(result){
-        console.log('UPDATE:', result);
-    });
+    // jsonpen.update(json, function(result){
+    //     console.log('UPDATE:', result);
+    // });
 
     // 线上读取
     jsonpen.read(function(result){
@@ -27,7 +27,7 @@ try {(function(){
     });
 
     // 线上删除
-    // jsonpen.del('a2c3c97762bbd624641976714249150e43fcd3c6', function(res){
+    // jsonpen.del('2a8397844b7899fc0e8b7633a8c89ed0e6397bf4', function(res){
     //     console.log('DEL', res);
     // });
 
